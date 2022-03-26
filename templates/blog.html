@@ -1,0 +1,9 @@
+{% include 'header.html' %}
+   {% load static %}
+
+   {% for d  in data %}
+   {% if d > 0 %}
+   <div class="alert alert-danger">hi {{d}}</div>
+   {% endif %}
+   {% endfor %}
+{% include 'footer.html' %}
